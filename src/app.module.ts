@@ -22,12 +22,6 @@
 //           url: dbUrl,
 //           entities: [User, Subscription],
 //           synchronize: true,
-//           ssl: true,
-//           extra: {
-//             ssl: {
-//               rejectUnauthorized: false
-//             }
-//           }
 //         };
 //       },
 //       inject: [ConfigService],

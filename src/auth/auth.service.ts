@@ -14,6 +14,7 @@ export class AuthService {
     ) { }
 
     async signUp(signUpDto: SignUpDto): Promise<User> {
+        console.log("Called")
         const { email, password, firstName, lastName } = signUpDto;
         const existingUser = await this.usersService.findByEmail(email);
         if (existingUser) {
